@@ -1,4 +1,4 @@
-const input = `500 
+const input = `500
 35.0`;
 
 const lines = input.split('\n');
