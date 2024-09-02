@@ -1,11 +1,14 @@
-const input = `30`;
+const input = `10
+85`;
 
 const lines = input.split('\n');
 
-const [distancia] = lines.map(Number);
+const [tempoGastoViagem, velocidadeMediaViagem] = lines.map(Number);
 
-const calculoTempo = (distancia * 2);
+const consumoAutomovel = 12;
+
+const distanciaPercorridaCom_12L = (tempoGastoViagem * velocidadeMediaViagem) / consumoAutomovel;
 
 console.log(
-    `${calculoTempo} minutos`
+    `${distanciaPercorridaCom_12L.toFixed(3)}`
 );
